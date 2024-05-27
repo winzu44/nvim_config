@@ -35,7 +35,7 @@ return {
     ["<Home>"] = {"^", desc = "Home key like vscode"}
   },
   t = {
-    ["<Esc>"] = {"<C-\\><C-n>", desc = "Move to normal mode w ESC"}
+    -- ["<Esc>"] = {"<C-\\><C-n>", desc = "Move to normal mode w ESC"}
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
