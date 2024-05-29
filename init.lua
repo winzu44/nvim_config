@@ -20,7 +20,8 @@ return {
 
   -- Set colorscheme to use
   colorscheme = "carbonfox",
-
+  -- activate type hint
+  vim.lsp.inlay_hint.enable(true);
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,

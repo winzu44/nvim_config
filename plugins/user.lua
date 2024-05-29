@@ -33,11 +33,11 @@ return {
     "maxmx03/solarized.nvim",
     name = "solarized"
   },
-  {
-  'mrcjkb/rustaceanvim',
-  version = '^4', -- Recommended
-  lazy = false, -- This plugin is already lazy
-  },
+  -- {
+  -- 'mrcjkb/rustaceanvim',
+  -- version = '^4', -- Recommended
+  -- lazy = false, -- This plugin is already lazy
+  -- },
   {
       "kdheepak/lazygit.nvim",
       cmd = {
@@ -56,6 +56,13 @@ return {
       keys = {
         { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
       }
+  },
+  {
+    'saecki/crates.nvim',
+    event = { "BufRead Cargo.toml" },
+    config = function()
+        require('crates').setup()
+    end,
   },
   {
     "xiyaowong/transparent.nvim",

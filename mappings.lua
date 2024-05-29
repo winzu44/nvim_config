@@ -32,7 +32,8 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-    ["<Home>"] = {"^", desc = "Home key like vscode"}
+    ["<Home>"] = {"^", desc = "Home key like vscode"},
+    -- toggle inlay hint
   },
   t = {
     -- ["<Esc>"] = {"<C-\\><C-n>", desc = "Move to normal mode w ESC"}
